@@ -1132,4 +1132,8 @@ object frmMain: TfrmMain
       FFFFFFFFFFFFFFFFFFFFFBFFFFFFFBFF00000000000000000000000000000000
       000000000000}
   end
+  object ActionList1: TActionList
+    Left = 912
+    Top = 56
+  end
 end

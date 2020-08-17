@@ -12,6 +12,8 @@
 #include <Vcl.ImgList.hpp>
 #include <Vcl.Menus.hpp>
 #include <Vcl.ToolWin.hpp>
+#include <System.Actions.hpp>
+#include <Vcl.ActnList.hpp>
 //---------------------------------------------------------------------------
 class TfrmMain : public TForm
 {
@@ -23,6 +25,7 @@ __published:	// IDE-managed Components
 	TToolButton *ToolButton1;
 	TToolButton *ToolButton2;
 	TStatusBar *StatusBar1;
+	TActionList *ActionList1;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TfrmMain(TComponent* Owner);
