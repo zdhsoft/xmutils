@@ -20,7 +20,7 @@ object frmMain: TfrmMain
     Width = 1079
     Height = 52
     ButtonHeight = 52
-    ButtonWidth = 65
+    ButtonWidth = 89
     Caption = 'ToolBar1'
     HotImages = ImageList1
     Images = ImageList1
@@ -30,14 +30,14 @@ object frmMain: TfrmMain
     object ToolButton1: TToolButton
       Left = 1
       Top = 0
-      Caption = 'ToolButton1'
-      ImageIndex = 0
+      Action = ActionTimeStamp
+      ImageIndex = 2
     end
     object ToolButton2: TToolButton
-      Left = 66
+      Left = 90
       Top = 0
-      Caption = 'ToolButton2'
-      ImageIndex = 1
+      Action = ActionMD5
+      ImageIndex = 5
     end
   end
   object StatusBar1: TStatusBar
@@ -55,6 +55,17 @@ object frmMain: TfrmMain
       item
         Width = 50
       end>
+  end
+  object PanelLayout: TPanel
+    Left = 0
+    Top = 52
+    Width = 1079
+    Height = 685
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 2
+    ExplicitLeft = 1
+    ExplicitTop = 46
   end
   object MainMenu1: TMainMenu
     Left = 952
@@ -1135,5 +1146,13 @@ object frmMain: TfrmMain
   object ActionList1: TActionList
     Left = 912
     Top = 56
+    object ActionMD5: TAction
+      Caption = 'ActionMD5'
+      OnExecute = ActionMD5Execute
+    end
+    object ActionTimeStamp: TAction
+      Caption = 'ActionTimeStamp'
+      OnExecute = ActionTimeStampExecute
+    end
   end
 end

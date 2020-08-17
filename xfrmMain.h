@@ -14,6 +14,11 @@
 #include <Vcl.ToolWin.hpp>
 #include <System.Actions.hpp>
 #include <Vcl.ActnList.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <vector>
+#include "XFunctionFunForm.h"
+
+typedef std::vector<TForm *> TSubFormList;
 //---------------------------------------------------------------------------
 class TfrmMain : public TForm
 {
@@ -26,7 +31,15 @@ __published:	// IDE-managed Components
 	TToolButton *ToolButton2;
 	TStatusBar *StatusBar1;
 	TActionList *ActionList1;
+	TPanel *PanelLayout;
+	TAction *ActionMD5;
+	TAction *ActionTimeStamp;
+	void __fastcall ActionMD5Execute(TObject *Sender);
+	void __fastcall ActionTimeStampExecute(TObject *Sender);
 private:	// User declarations
+	TSubFormList m_SubFormList;
+	XFunctionFunForm * m_CurrActiveForm;
+    void __fastcall ShowLocalForm(XFunctionFunForm * paramForm,TAction * paramAction);
 public:		// User declarations
 	__fastcall TfrmMain(TComponent* Owner);
 };
