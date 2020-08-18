@@ -37,7 +37,7 @@ __fastcall TfrmMain::TfrmMain(TComponent* Owner)
 
 void __fastcall TfrmMain::ShowLocalForm(XFunctionFunForm * paramForm,TAction * paramAction)
 {
-	for(TSubFormList::iterator iter = this->m_SubFormList.begin(); iter != m_SubFormList.end(); ++iter)
+	for(auto iter = this->m_SubFormList.begin(); iter != m_SubFormList.end(); ++iter)
 	{
 		if (*iter != paramForm)
 		{
@@ -69,4 +69,5 @@ void __fastcall TfrmMain::ActionTimeStampExecute(TObject *Sender)
 	ShowLocalForm(frmTimestamp, ActionTimeStamp);
 }
 //---------------------------------------------------------------------------
+
 

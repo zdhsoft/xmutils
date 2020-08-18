@@ -64,8 +64,6 @@ object frmMain: TfrmMain
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = 1
-    ExplicitTop = 46
   end
   object MainMenu1: TMainMenu
     Left = 952
