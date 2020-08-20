@@ -14,8 +14,3 @@ __fastcall TfrmTimestamp::TfrmTimestamp(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TfrmTimestamp::Button1Click(TObject *Sender)
-{
-    ShowMessage("XFrmTimestamp");
-}
-//---------------------------------------------------------------------------

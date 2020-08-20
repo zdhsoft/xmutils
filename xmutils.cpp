@@ -5,8 +5,8 @@
 #include <tchar.h>
 //---------------------------------------------------------------------------
 USEFORM("xfrmMain.cpp", frmMain);
-USEFORM("xfrmTimestamp.cpp", frmTimestamp);
 USEFORM("xfrmMD5.cpp", frmMD5);
+USEFORM("xfrmTimestamp.cpp", frmTimestamp);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
