@@ -34,8 +34,15 @@ __published:	// IDE-managed Components
 	TPanel *PanelLayout;
 	TAction *ActionMD5;
 	TAction *ActionTimeStamp;
+	TMenuItem *T1;
+	TMenuItem *H1;
+	TMenuItem *T2;
+	TMenuItem *MD51;
+	TAction *ActionJSON;
+	TToolButton *ToolButton3;
 	void __fastcall ActionMD5Execute(TObject *Sender);
 	void __fastcall ActionTimeStampExecute(TObject *Sender);
+	void __fastcall ActionJSONExecute(TObject *Sender);
 private:	// User declarations
 	TSubFormList m_SubFormList;
 	XFunctionFunForm * m_CurrActiveForm;

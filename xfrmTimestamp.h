@@ -14,6 +14,10 @@ class TfrmTimestamp : public XFunctionFunForm
 {
 __published:	// IDE-managed Components
 	TButton *Button1;
+	TLabel *Label1;
+	TEdit *Edit1;
+	TComboBox *ComboBox1;
+	TEdit *Edit2;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TfrmTimestamp(TComponent* Owner);

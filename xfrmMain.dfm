@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'frmMain'
+  Caption = 'XM'#23567#24037#20855
   ClientHeight = 756
   ClientWidth = 1079
   Color = clBtnFace
@@ -20,7 +20,7 @@ object frmMain: TfrmMain
     Width = 1079
     Height = 52
     ButtonHeight = 52
-    ButtonWidth = 89
+    ButtonWidth = 63
     Caption = 'ToolBar1'
     HotImages = ImageList1
     Images = ImageList1
@@ -34,10 +34,15 @@ object frmMain: TfrmMain
       ImageIndex = 2
     end
     object ToolButton2: TToolButton
-      Left = 90
+      Left = 64
       Top = 0
       Action = ActionMD5
       ImageIndex = 5
+    end
+    object ToolButton3: TToolButton
+      Left = 127
+      Top = 0
+      Action = ActionJSON
     end
   end
   object StatusBar1: TStatusBar
@@ -69,7 +74,19 @@ object frmMain: TfrmMain
     Left = 952
     Top = 56
     object File1: TMenuItem
-      Caption = '&File'
+      Caption = #25991#20214'(&F)'
+    end
+    object T1: TMenuItem
+      Caption = #24037#20855'(&T)'
+      object T2: TMenuItem
+        Action = ActionTimeStamp
+      end
+      object MD51: TMenuItem
+        Action = ActionMD5
+      end
+    end
+    object H1: TMenuItem
+      Caption = #24110#21161'(&H)'
     end
   end
   object ImageList1: TImageList
@@ -1142,15 +1159,23 @@ object frmMain: TfrmMain
       000000000000}
   end
   object ActionList1: TActionList
+    Images = ImageList1
     Left = 912
     Top = 56
     object ActionMD5: TAction
-      Caption = 'ActionMD5'
+      Caption = 'M&D5'
+      ImageIndex = 2
       OnExecute = ActionMD5Execute
     end
     object ActionTimeStamp: TAction
-      Caption = 'ActionTimeStamp'
+      Caption = #26102#38388#25139'(&T)'
+      ImageIndex = 4
       OnExecute = ActionTimeStampExecute
+    end
+    object ActionJSON: TAction
+      Caption = 'ActionJSON'
+      ImageIndex = 1
+      OnExecute = ActionJSONExecute
     end
   end
 end

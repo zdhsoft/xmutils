@@ -71,3 +71,9 @@ void __fastcall TfrmMain::ActionTimeStampExecute(TObject *Sender)
 //---------------------------------------------------------------------------
 
 
+void __fastcall TfrmMain::ActionJSONExecute(TObject *Sender)
+{
+        //
+}
+//---------------------------------------------------------------------------
+

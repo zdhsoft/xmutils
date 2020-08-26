@@ -15,12 +15,47 @@ object frmTimestamp: TfrmTimestamp
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 48
+    Top = 40
+    Width = 185
+    Height = 13
+    Caption = 'Label1Unix'#26102#38388#25139#65288'Unix timestamp'#65289
+  end
   object Button1: TButton
-    Left = 288
-    Top = 160
+    Left = 320
+    Top = 392
     Width = 81
     Height = 49
     Caption = 'Button1'
     TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 239
+    Top = 37
+    Width = 210
+    Height = 21
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object ComboBox1: TComboBox
+    Left = 455
+    Top = 37
+    Width = 65
+    Height = 21
+    ItemIndex = 0
+    TabOrder = 2
+    Text = #31186
+    Items.Strings = (
+      #31186
+      #27627#31186)
+  end
+  object Edit2: TEdit
+    Left = 526
+    Top = 37
+    Width = 171
+    Height = 21
+    TabOrder = 3
+    Text = 'Edit2'
   end
 end
